@@ -10,9 +10,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class FizzBuzzController extends AbstractController
 {
     /**
-     * @Route("/fizz-buzz", name="app_fizz_buzz")
+     * @Route("/", name="app_fizz_buzz")
      */
-    public function index(FizzBuzzService $fizzBuzzService): Response
+    public function getFizzBuzzOutputAction(FizzBuzzService $fizzBuzzService): Response
     {
         $fizzBuzzOutput = $fizzBuzzService->getFizzBuzzOutput();
 
